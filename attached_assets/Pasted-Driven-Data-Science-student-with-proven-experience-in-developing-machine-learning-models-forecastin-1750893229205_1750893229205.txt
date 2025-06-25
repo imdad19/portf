@@ -1,0 +1,99 @@
+Driven Data Science student with proven experience in developing machine learning models, forecasting
+time series, and automating workflows. Proficient in R, Python, SQL, and interactive data visualization tools
+such as ggplot2, plotly and PowerBi. Skilled in automating data entry and web scraping using Selenium, as
+well as building end-to-end data pipelines and predictive models. Experienced in creating Shiny
+dashboards, deploying AI solutions, and working with large datasets to deliver actionable insightsProgramming Languages: R, Python, SQLData Science Tools & Libraries: tidyverse, tidymodels, ggplot2, pandas, numpy, matplotlib, TSstudio,forecast, zoo, xts, gwalker, tidyquant, dygraph ...Machine Learning Techniques: Time Series Analysis, Regression ,Ensemble models ,Artificial NeuralNetworks , Random Forests, Decision Trees, Logistic Regression, K-Nearest Neighbors (KNN)Methodologies: CRISP-DM, Exploratory Data Analysis (EDA), Object-Oriented Programming (OOP)Automation: Selenium (Web Scraping, Data Entry Automation)Web Development: HTML, CSSDatabase Management: PostgreSQLVisualization Tools: PowerbiINTERNSHIP EXPERIENCE DATA SCIENTIST+213 559 04 41 33 · aouidaneimad@gmail.comOran, AlgeriaAvailable for relocation across EuropeAOUIDANE IMED EDDINEPROFESSIONAL EXPERIENCESKILLSLinkedin : Imed Eddine AouidaneGithub : Imed Eddine AouidaneMDM HASNAOUI [ ORAN , Algeria ] Accomplishments:Develop practical understanding of data integration and cleaning methodologiesObserve how data science principles adapt to specific industry contextsConnecting analytical insights to broader business objectivesQuickly acquiring domain knowledge in woodworking and interior design industriesFeb 2025WE MAKE FUTURE 2025 [ Bologna , Italy] Participated in this intertnational event which showed many oppourtunities in AI.A growing trend towards the development of tools and platforms that make AI accessible to a wideraudience, including non-technicians.A marked interest in autonomous and collaborative AI agents.Integration of AI into existing workflowsA growing demand for sector-specific AI solutions.June 2025
+PROFESSIONAL CERTIFIACTES
+DRAPEST-TEXALG [ Khenchela ]
+Accomplishments:
+Acquired a comprehensive understanding of the company's structure, operations, and workflow within
+the texture industry.
+Collaborated with teams across departments to gain insights into texture product development and
+optimization.
+Participated in hands-on activities, learning about texture analysis techniques and quality assurance
+processes.
+Strengthened foundational knowledge of the texture industry, laying the groundwork for future roles and
+responsibilities.
+Dec 2022
+Machine Learning with Tidymodels
+DataCamp | Completed October 2024
+Learned Tidymodels for machine learning workflows in R. Built regression and classification models, finetuned
+decision trees, and performed feature engineering.
+Python for Data Science, AI & Development
+IBM via Coursera | Completed September 2023
+Mastered Python basics, including data types, variables, and libraries like Pandas and NumPy. Gained
+experience with web scraping and API integration.
+Data Analysis with R Programming
+Google via Coursera | Completed November 2023
+Acquired R programming skills, covering data types, visualization, and analysis techniques using R’s
+tidyverse ecosystem.
+Tree-Based Models with R
+DataCamp | Completed July 2024
+Developed expertise in tree-based algorithms, including decision trees, random forests, and boosting
+techniques, with applications in regression and classification.
+Finance with R
+DataCamp | Completed August 2024
+Explored financial data analysis using R. Applied statistical techniques for portfolio optimization and risk
+management.
+DRAPEST-TEXALG [ Khenchela ]
+Accomplishments:
+Conducted research to identify and explore potential data solutions tailored for the texture industry.
+Utilized data analysis tools and techniques to evaluate current processes and identify areas for
+improvement.
+Collaborated with the team to brainstorm innovative data-driven strategies and solutions.
+April 2023
+LITMED PRO [ Batna , Algeria ]
+Accomplishments:
+Explored the healthcare sector, gaining insights into medical products and equipment.
+Developed strong communication, collaboration, and problem-solving skills.
+Improved computer and office software proficiency.
+Demonstrated effective time management and prioritization abilities.
+Dec 2023
+DATA SCIENCE PROJECTS
+AI Revenue Impact Assessment: NVIDIA Case Study
+Comprehensive econometric analysis quantifying AI adoption impact on corporate financial performance. Developed
+advanced statistical models demonstrating revenue growth correlation and cauaslity with AI investment using
+regression analysis, time series modeling, and causal inference techniques.
+Intelligent Audio Processing System | 2024
+End-to-end audio transcription and summarization pipeline using OpenAI Whisper. Implemented noise reduction
+algorithms and speaker diarization for multi-speaker environments.
+Global Active Power Prediction
+Predicted electricity consumption using time series data. Applied ARIMA and seasonal decomposition for modeling.
+Technologies: R, TSstudio, forecast, ggplot2
+Sales Analytics Dashboard
+Visualized sales trends, regional performance, and product profitability with an interactive Power BI dashboard.
+Technologies: Power BI
+Treatment Outcome Assessment
+Built a logistic regression model to predict treatment success and identified key predictors through statistical
+analysis.
+Technologies: R, tidyverse, glm, caret
+ANN Implementation in R
+Created an Artificial Neural Network (ANN) from scratch for digit recognition, implementing custom backpropagation
+and gradient descent.
+Technologies: R
+Parallel Coordinates Visualization
+Authored a guide on visualizing high-dimensional data using parallel coordinates to reveal variable patterns.
+Technologies: R, ggplot2, patchwork
+University Data Scraping
+Scraped university websites for course details, fees, and dates; structured data in PostgreSQL for analysis.
+Technologies: Python, BeautifulSoup, Selenium, PostgreSQL
+Automating WordPress Data Entry
+Automated Excel-based data entry into WordPress forms using Selenium, improving efficiency and accuracy.
+Technologies: Python, Selenium
+Bitcoin Price Prediction
+Modeled Bitcoin price trends using time series techniques like ACF/PACF and seasonal decomposition.
+Technologies: R, TSstudio, forecast, zoo
+Telecom Customer Churn Prediction
+Predicted customer churn using machine learning models, including Logistic Regression and Random Forest.
+Technologies: R, tidymodels, ggplot2
+Palmer Penguins Classification
+Analyzed the Palmer Penguins dataset and built a species classification model, deployed as an interactive Shiny
+app for real-time testing.
+Technologies: R, Shiny, tidyverse, palmerpenguins
+Ecole supérieure d’économie 2022 - 2025
+école supérieure de gestion et de l’économie numérique 2020 -2022
+BAC 2020 Sciences expérimentales
+Data science for economics and business Student
+2 preparatory years + passed the national entrance examination to the graduate schools .
+Moyenne de 14.93 / 20
+EDUCATION
