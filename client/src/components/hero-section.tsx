@@ -7,7 +7,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative">
+    <section id="home" className="min-h-screen flex items-center justify-center relative pt-20">
       {/* Premium workspace background with glassmorphism overlay */}
       <div 
         className="absolute inset-0 parallax-bg"
@@ -34,8 +34,11 @@ export default function HeroSection() {
               >
                 <i className="fas fa-download mr-2"></i>Download CV
               </button>
-              <div className="text-center">
-                <span className="text-[var(--portfolio-coral)] font-semibold">🇪🇺 Available for European Opportunities</span>
+              <div className="glass-effect px-6 py-3 rounded-full border border-[var(--portfolio-coral)] border-opacity-30">
+                <div className="flex items-center">
+                  <i className="fas fa-globe-europe text-[var(--portfolio-coral)] mr-2"></i>
+                  <span className="text-[var(--portfolio-coral)] font-medium">Open to Global Opportunities</span>
+                </div>
               </div>
             </div>
           </div>

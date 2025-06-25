@@ -82,7 +82,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-portfolio-secondary relative">
+    <section id="contact" className="py-20 bg-portfolio-secondary relative scroll-mt-20">
       {/* Abstract pattern background */}
       <div 
         className="absolute inset-0 opacity-5"
@@ -115,13 +115,23 @@ export default function ContactSection() {
               ))}
             </div>
             
-            {/* European Availability Banner */}
-            <div className="mt-8 p-4 bg-gradient-to-r from-[var(--portfolio-coral)] to-[var(--portfolio-accent)] bg-opacity-20 rounded-xl border border-[var(--portfolio-coral)] border-opacity-30">
-              <div className="flex items-center">
-                <i className="fas fa-plane text-[var(--portfolio-coral)] mr-3"></i>
-                <div>
-                  <h4 className="font-semibold text-[var(--portfolio-coral)]">🇪🇺 European Opportunities</h4>
-                  <p className="text-sm text-gray-300">Actively seeking opportunities across European markets</p>
+            {/* Professional Mobility */}
+            <div className="mt-8 p-6 glass-effect rounded-xl border border-[var(--portfolio-accent)] border-opacity-30">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[var(--portfolio-accent)] to-[var(--portfolio-coral)] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i className="fas fa-globe-europe text-white text-2xl"></i>
+                </div>
+                <h4 className="text-lg font-bold text-[var(--portfolio-accent)] mb-2">Global Mobility</h4>
+                <p className="text-gray-300 text-sm mb-3">Open to international opportunities worldwide</p>
+                <div className="flex justify-center space-x-4 text-xs text-gray-400">
+                  <span className="flex items-center">
+                    <i className="fas fa-check-circle text-green-400 mr-1"></i>
+                    Remote Ready
+                  </span>
+                  <span className="flex items-center">
+                    <i className="fas fa-passport text-blue-400 mr-1"></i>
+                    Visa Support Welcome
+                  </span>
                 </div>
               </div>
             </div>

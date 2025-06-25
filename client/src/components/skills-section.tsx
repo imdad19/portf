@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { skillsData, mlExpertise } from '@/lib/skills-data';
+import { skillsData, mlExpertise, aiIntegrationSkills } from '@/lib/skills-data';
 
 export default function SkillsSection() {
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
@@ -80,7 +80,7 @@ export default function SkillsSection() {
   };
 
   return (
-    <section id="skills" className="py-20 bg-portfolio-secondary relative">
+    <section id="skills" className="py-20 bg-portfolio-secondary relative scroll-mt-20">
       {/* Modern architecture background */}
       <div 
         className="absolute inset-0 opacity-5"
@@ -138,6 +138,20 @@ export default function SkillsSection() {
                 <i className={`fas fa-${item.icon} text-4xl text-[var(--portfolio-accent)] mb-4`}></i>
                 <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
                 <p className="text-gray-300 text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* AI Integration Skills */}
+        <div className="mt-12 glass-effect rounded-2xl p-8">
+          <h3 className="text-2xl font-bold gradient-text mb-6 text-center">AI Integration & APIs</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {aiIntegrationSkills.map((item, index) => (
+              <div key={index} className="text-center p-6 bg-portfolio-primary rounded-xl">
+                <i className={`fas fa-${item.icon} text-4xl text-[var(--portfolio-coral)] mb-4`}></i>
+                <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+                <p className="text-gray-300 text-xs">{item.description}</p>
               </div>
             ))}
           </div>

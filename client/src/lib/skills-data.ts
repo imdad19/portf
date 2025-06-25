@@ -54,3 +54,26 @@ export const mlExpertise = [
     icon: "chart-line"
   }
 ];
+
+export const aiIntegrationSkills = [
+  {
+    title: "OpenAI GPT-4 Integration",
+    description: "API development, prompt engineering, conversation systems",
+    icon: "robot"
+  },
+  {
+    title: "Whisper Speech-to-Text",
+    description: "Audio transcription, voice recognition, multilingual processing",
+    icon: "microphone"
+  },
+  {
+    title: "Hugging Face Transformers",
+    description: "Pre-trained models, fine-tuning, NLP pipelines",
+    icon: "brain"
+  },
+  {
+    title: "Voice Recognition Systems",
+    description: "Speech processing, audio analysis, real-time transcription",
+    icon: "volume-up"
+  }
+];

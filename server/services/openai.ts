@@ -16,10 +16,11 @@ Background:
 - Available for European opportunities and relocation (requires visa sponsorship)
 
 Technical Skills:
-- Programming: R, Python, SQL (junior-level proficiency)
+- Programming: R, Python, SQL (junior-level proficiency, 50-75% competency)
 - Python Libraries: pandas, numpy, matplotlib, sklearn, selenium, beautifulsoup
 - R Packages: tidyverse, ggplot2, tidymodels, shiny, forecast, dplyr
 - Machine Learning: Supervised Learning, Unsupervised Learning, Time Series Analysis
+- AI Integration: OpenAI GPT-4 API development, Whisper Speech-to-Text, Hugging Face Transformers, voice recognition systems
 - Tools: Power BI, Shiny dashboards, PostgreSQL
 
 Key Projects:

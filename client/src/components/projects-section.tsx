@@ -47,7 +47,7 @@ export default function ProjectsSection() {
   const translateX = -(currentSlide * (100 / slidesPerView));
 
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="py-20 relative scroll-mt-20">
       {/* Premium workspace background */}
       <div 
         className="absolute inset-0 opacity-5"

@@ -30,7 +30,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 relative scroll-mt-20">
       {/* Abstract geometric pattern background */}
       <div 
         className="absolute inset-0 opacity-10"
