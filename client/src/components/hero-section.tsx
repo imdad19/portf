@@ -22,17 +22,17 @@ export default function HeroSection() {
       />
       
       <div className="container mx-auto px-6 z-10 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-in-left">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
               Hello, I'm <span className="gradient-text">Imed Eddine Aouidane</span>
             </h1>
-            <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6 animate-fade-in animate-delay-200">Data Scientist & Web Developer</h2>
-            <p className="text-lg text-gray-300 mb-8 max-w-lg animate-fade-in animate-delay-300">
+            <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6">Data Scientist & Web Developer</h2>
+            <p className="text-lg text-gray-300 mb-8 max-w-lg">
               Data scientist specializing in machine learning, statistical analysis, and data visualization. 
               Creating intelligent data-driven solutions and modern web applications.
             </p>
-            <div className="flex justify-center lg:justify-start animate-slide-in-up animate-delay-400">
+            <div className="flex justify-center lg:justify-start">
               <div className="glass-effect px-6 py-3 rounded-full border border-[var(--portfolio-coral)] border-opacity-30">
                 <div className="flex items-center">
                   <i className="fas fa-globe-europe text-[var(--portfolio-coral)] mr-2"></i>

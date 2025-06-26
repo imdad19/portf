@@ -41,8 +41,8 @@ export default function AboutSection() {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-4 animate-fade-in">About Me</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-slide-in-up animate-delay-200">
+          <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-4">About Me</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Data scientist and web developer creating modern websites, portfolios, and intelligent data-driven solutions for businesses worldwide.
           </p>
         </div>

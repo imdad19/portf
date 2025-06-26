@@ -95,6 +95,11 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
 - **GitHub**: https://github.com/imdad19
 
 ## Changelog
+- June 26, 2025: Removed animations and improved hero layout
+  - Removed loading animation and entrance animations per user request
+  - Reduced gap between hero text and image from 12 to 6 (closer spacing)
+  - Cleaned up animation-related CSS classes and imports
+  - Maintained Netlify deployment configuration
 - June 26, 2025: Added animations and prepared for Netlify deployment
   - Created comprehensive loading animation with progress indicators and floating particles
   - Added smooth entrance animations to all sections (fade-in, slide-in, scale-in)
