@@ -1,0 +1,55 @@
+ Netlify Build                                                 
+9:58:05 PM: ────────────────────────────────────────────────────────────────
+9:58:05 PM: ​
+9:58:05 PM: ❯ Version
+9:58:05 PM:   @netlify/build 33.4.6
+9:58:05 PM: ​
+9:58:05 PM: ❯ Flags
+9:58:05 PM:   accountId: 64b079d9fed33c5020e77ede
+9:58:05 PM:   baseRelDir: true
+9:58:05 PM:   buildId: 685db43d81b2e4dcad512d35
+9:58:05 PM:   deployId: 685db43d81b2e4dcad512d37
+9:58:06 PM: ​
+9:58:06 PM: ❯ Current directory
+9:58:06 PM:   /opt/build/repo
+9:58:06 PM: ​
+9:58:06 PM: ❯ Config file
+9:58:06 PM:   /opt/build/repo/netlify.toml
+9:58:06 PM: ​
+9:58:06 PM: ❯ Context
+9:58:06 PM:   production
+9:58:06 PM: ​
+9:58:06 PM: build.command from netlify.toml                               
+9:58:06 PM: ────────────────────────────────────────────────────────────────
+9:58:06 PM: ​
+9:58:06 PM: $ cd client && npm install --legacy-peer-deps && npm run build
+9:58:17 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+9:58:17 PM: npm error code ETARGET
+9:58:17 PM: npm error notarget No matching version found for tailwindcss@^3.5.8.
+9:58:17 PM: npm error notarget In most cases you or one of your dependencies are requesting
+9:58:17 PM: npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-06-26T20_58_06_124Z-debug-0.log
+9:58:17 PM: ​
+9:58:17 PM: "build.command" failed                                        
+9:58:17 PM: ────────────────────────────────────────────────────────────────
+9:58:17 PM: ​
+9:58:17 PM:   Error message
+9:58:17 PM:   Command failed with exit code 1: cd client && npm install --legacy-peer-deps && npm run build (https://ntl.fyi/exit-code-1)
+9:58:17 PM: ​
+9:58:17 PM:   Error location
+9:58:17 PM:   In build.command from netlify.toml:
+9:58:17 PM:   cd client && npm install --legacy-peer-deps && npm run build
+9:58:17 PM: ​
+9:58:17 PM:   Resolved config
+9:58:17 PM:   build:
+9:58:17 PM:     command: cd client && npm install --legacy-peer-deps && npm run build
+9:58:17 PM:     commandOrigin: config
+9:58:17 PM:     environment:
+9:58:17 PM:       - NODE_VERSION
+9:58:17 PM:     publish: /opt/build/repo/client/dist
+9:58:17 PM:     publishOrigin: config
+9:58:17 PM:   redirects:
+9:58:17 PM:     - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
