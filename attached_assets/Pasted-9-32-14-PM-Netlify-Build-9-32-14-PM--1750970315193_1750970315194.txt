@@ -1,0 +1,74 @@
+9:32:14 PM: Netlify Build                                                 
+9:32:14 PM: ────────────────────────────────────────────────────────────────
+9:32:14 PM: ​
+9:32:14 PM: ❯ Version
+9:32:14 PM:   @netlify/build 33.4.6
+9:32:14 PM: ​
+9:32:14 PM: ❯ Flags
+9:32:14 PM:   accountId: 64b079d9fed33c5020e77ede
+9:32:14 PM:   baseRelDir: true
+9:32:14 PM:   buildId: 685dae3c239edc0b201f2b61
+9:32:14 PM:   deployId: 685dae3c239edc0b201f2b63
+9:32:14 PM: ​
+9:32:14 PM: ❯ Current directory
+9:32:14 PM:   /opt/build/repo
+9:32:14 PM: ​
+9:32:14 PM: ❯ Config file
+9:32:14 PM:   /opt/build/repo/netlify.toml
+9:32:14 PM: ​
+9:32:14 PM: ❯ Context
+9:32:14 PM:   production
+9:32:14 PM: ​
+9:32:14 PM: build.command from netlify.toml                               
+9:32:14 PM: ────────────────────────────────────────────────────────────────
+9:32:14 PM: ​
+9:32:14 PM: $ cd client && npm install && npm run build
+9:32:22 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+9:32:22 PM: npm error code ERESOLVE
+9:32:22 PM: npm error ERESOLVE unable to resolve dependency tree
+9:32:22 PM: npm error
+9:32:22 PM: npm error While resolving: portfolio-frontend@1.0.0
+9:32:22 PM: npm error Found: tailwindcss@undefined
+9:32:22 PM: npm error node_modules/tailwindcss
+9:32:22 PM: npm error   dev tailwindcss@"^3.5.8" from the root project
+9:32:22 PM: npm error
+9:32:22 PM: npm error Could not resolve dependency:
+9:32:22 PM: npm error peer tailwindcss@">=3.0.0 || insiders" from tailwindcss-animate@1.0.7
+9:32:22 PM: npm error node_modules/tailwindcss-animate
+9:32:22 PM: npm error   dev tailwindcss-animate@"^1.0.7" from the root project
+9:32:22 PM: npm error
+9:32:22 PM: npm error Fix the upstream dependency conflict, or retry
+9:32:22 PM: npm error this command with --force or --legacy-peer-deps
+9:32:22 PM: npm error to accept an incorrect (and potentially broken) dependency resolution.
+9:32:22 PM: npm error
+9:32:22 PM: npm error
+9:32:22 PM: npm error For a full report see:
+9:32:22 PM: npm error /opt/buildhome/.npm/_logs/2025-06-26T20_32_14_934Z-eresolve-report.txt
+9:32:22 PM: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-06-26T20_32_14_934Z-debug-0.log
+9:32:22 PM: ​
+9:32:22 PM: "build.command" failed                                        
+9:32:22 PM: ────────────────────────────────────────────────────────────────
+9:32:22 PM: ​
+9:32:22 PM:   Error message
+9:32:22 PM:   Command failed with exit code 1: cd client && npm install && npm run build (https://ntl.fyi/exit-code-1)
+9:32:22 PM: ​
+9:32:22 PM:   Error location
+9:32:22 PM:   In build.command from netlify.toml:
+9:32:22 PM:   cd client && npm install && npm run build
+9:32:22 PM: ​
+9:32:22 PM:   Resolved config
+9:32:22 PM:   build:
+9:32:22 PM:     command: cd client && npm install && npm run build
+9:32:22 PM:     commandOrigin: config
+9:32:22 PM:     environment:
+9:32:22 PM:       - NODE_VERSION
+9:32:22 PM:     publish: /opt/build/repo/client/dist
+9:32:22 PM:     publishOrigin: config
+9:32:22 PM:   redirects:
+9:32:22 PM:     - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+9:32:22 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+9:32:22 PM: Failing build: Failed to build site
+9:32:23 PM: Finished processing build request in 25.161s

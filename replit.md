@@ -119,6 +119,8 @@ The portfolio is fully configured for Netlify with automatic GitHub integration:
   - Removed unused chatbot component with backend API calls
   - Verified clean build output: 427.69 kB JS bundle, 7.42 kB CSS
   - Confirmed Netlify configuration and SPA redirects working properly
+  - Fixed Netlify dependency resolution issue with --legacy-peer-deps flag
+  - Added .npmrc file for consistent dependency handling across environments
 - June 26, 2025: Added multi-language translation system
   - Implemented translation support for English, French, German, and Italian
   - Added language selector dropdown in navigation (desktop and mobile)
