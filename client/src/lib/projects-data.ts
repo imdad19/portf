@@ -24,7 +24,32 @@ export const webDevProjects: Project[] = [
     year: "2024",
     category: "web-dev",
     url: "https://auralyticsai.com",
-    image: "/project-images/auralytics-ai.svg"
+    image: "/attached_assets/Auralytics Ai-28_1750960301699.png"
+  },
+  {
+    id: 10,
+    title: "Nexai WMF",
+    description: "Modern web management framework with AI integration for streamlined workflow automation and enhanced productivity. Features responsive design and user-friendly interface.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "AI Integration", "Netlify"],
+    icon: "lightning-bolt",
+    gradientFrom: "from-blue-600",
+    gradientTo: "to-cyan-600",
+    year: "2024",
+    category: "web-dev",
+    url: "https://nexaiwmf.netlify.app/",
+    image: "/project-images/nexai-wmf.svg"
+  },
+  {
+    id: 11,
+    title: "Professional Portfolio",
+    description: "Modern, responsive portfolio website showcasing web development and data science expertise with interactive features, contact forms, and project categorization.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Responsive Design"],
+    icon: "user",
+    gradientFrom: "from-emerald-600",
+    gradientTo: "to-teal-600",
+    year: "2025",
+    category: "web-dev",
+    image: "/project-images/portfolio.svg"
   }
 ];
 

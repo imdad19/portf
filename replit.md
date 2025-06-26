@@ -95,6 +95,12 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
 - **GitHub**: https://github.com/imdad19
 
 ## Changelog
+- June 26, 2025: Added web development projects and updated images
+  - Updated Auralytics AI to use provided brand image
+  - Added Nexai WMF project (https://nexaiwmf.netlify.app/)
+  - Added current portfolio project as web development showcase
+  - Created custom SVG visualizations for new projects
+  - Enhanced project categorization with interactive tabs
 - June 26, 2025: Simplified to frontend-only architecture
   - Removed AI chatbot (unnecessary for portfolio)
   - Converted contact form to mailto integration
