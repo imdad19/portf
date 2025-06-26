@@ -23,7 +23,7 @@ export default function Portfolio() {
       <footer className="py-8 border-t border-gray-800">
         <div className="container mx-auto px-6 text-center">
           <p className="text-gray-400">
-            © 2024 Imed Eddine Aouidane. Built with passion for data science and innovation.
+            © 2025 Imed Eddine Aouidane. Built with passion for data science and innovation.
           </p>
         </div>
       </footer>

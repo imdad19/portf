@@ -2,8 +2,13 @@ import profileImage from "@assets/photo_2025-06-08_12-52-06_1750893288551.jpg";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
-    // This would trigger CV download
-    console.log('CV download triggered');
+    // Create a downloadable CV link
+    const link = document.createElement('a');
+    link.href = '/cv-imed-eddine-aouidane.pdf';
+    link.download = 'CV-Imed-Eddine-Aouidane.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

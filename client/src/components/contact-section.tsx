@@ -62,17 +62,20 @@ export default function ContactSection() {
     {
       icon: "fas fa-envelope",
       title: "Email",
-      value: "imed.aouidane@email.com"
+      value: "aouidaneimad@gmail.com",
+      link: "mailto:aouidaneimad@gmail.com"
     },
     {
       icon: "fab fa-linkedin", 
       title: "LinkedIn",
-      value: "linkedin.com/in/imed-aouidane"
+      value: "linkedin.com/in/imed-eddine-aouidane-152b17201",
+      link: "https://www.linkedin.com/in/imed-eddine-aouidane-152b17201"
     },
     {
       icon: "fab fa-github",
       title: "GitHub", 
-      value: "github.com/imed-aouidane"
+      value: "github.com/imdad19",
+      link: "https://github.com/imdad19"
     },
     {
       icon: "fas fa-map-marker-alt",
@@ -109,7 +112,18 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">{info.title}</h4>
-                    <p className="text-gray-300">{info.value}</p>
+                    {info.link ? (
+                      <a 
+                        href={info.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-300 hover:text-[var(--portfolio-accent)] transition-colors duration-300"
+                      >
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="text-gray-300">{info.value}</p>
+                    )}
                   </div>
                 </div>
               ))}
