@@ -1,6 +1,8 @@
 import profileImage from "@assets/photo_2025-06-08_12-52-06_1750893288551.jpg";
+import { useLanguage } from "@/hooks/use-language";
 
 export default function HeroSection() {
+  const { t } = useLanguage();
   const handleDownloadCV = () => {
     // Create a downloadable CV link
     const link = document.createElement('a');
@@ -25,18 +27,17 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Hello, I'm <span className="gradient-text">Imed Eddine Aouidane</span>
+              {t.hero.greeting} <span className="gradient-text">Imed Eddine Aouidane</span>
             </h1>
-            <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6">Data Scientist & Web Developer</h2>
+            <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6">{t.hero.title}</h2>
             <p className="text-lg text-gray-300 mb-8 max-w-lg">
-              Data scientist specializing in machine learning, statistical analysis, and data visualization. 
-              Creating intelligent data-driven solutions and modern web applications.
+              {t.hero.description}
             </p>
             <div className="flex justify-center lg:justify-start">
               <div className="glass-effect px-6 py-3 rounded-full border border-[var(--portfolio-coral)] border-opacity-30">
                 <div className="flex items-center">
                   <i className="fas fa-globe-europe text-[var(--portfolio-coral)] mr-2"></i>
-                  <span className="text-[var(--portfolio-coral)] font-medium">Open to Global Opportunities</span>
+                  <span className="text-[var(--portfolio-coral)] font-medium">{t.hero.availability}</span>
                 </div>
               </div>
             </div>

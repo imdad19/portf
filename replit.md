@@ -95,6 +95,12 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
 - **GitHub**: https://github.com/imdad19
 
 ## Changelog
+- June 26, 2025: Added multi-language translation system
+  - Implemented translation support for English, French, German, and Italian
+  - Added language selector dropdown in navigation (desktop and mobile)
+  - Created comprehensive translation system with context provider
+  - Translated hero, navigation, about, and projects sections
+  - Language preference saved to localStorage for persistence
 - June 26, 2025: Enhanced hero section and added pharmacist portfolio project
   - Increased profile photo size from 320px to 384px (480px on large screens)
   - Added new web development project: Pharmacist Portfolio for Dr. Sarah Johnson, PharmD

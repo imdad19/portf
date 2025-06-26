@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useLanguage } from "@/hooks/use-language";
+import LanguageSelector from "./language-selector";
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,10 +39,10 @@ export default function Navigation() {
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'about', label: t.nav.about },
+    { id: 'skills', label: t.nav.skills },
+    { id: 'projects', label: t.nav.projects },
+    { id: 'contact', label: t.nav.contact },
   ];
 
   return (
@@ -49,7 +52,7 @@ export default function Navigation() {
           <div className="text-xl font-bold gradient-text">IA.</div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map(item => (
               <button
                 key={item.id}
@@ -63,6 +66,7 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+            <LanguageSelector />
           </div>
           
           {/* Mobile Menu Button */}
@@ -91,6 +95,9 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ))}
+              <div className="pt-4">
+                <LanguageSelector />
+              </div>
             </div>
           </div>
         )}

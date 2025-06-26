@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { webDevProjects, dataScienceProjects } from '@/lib/projects-data';
+import { useLanguage } from "@/hooks/use-language";
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState<'web-dev' | 'data-science'>('web-dev');
+  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(1);
   
@@ -61,8 +63,8 @@ export default function ProjectsSection() {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-4">Featured Projects</h2>
-          <p className="text-xl text-gray-300">Web development and data science solutions</p>
+          <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-4">{t.projects.title}</h2>
+          <p className="text-xl text-gray-300">{t.projects.description}</p>
           
           {/* Category Tabs */}
           <div className="flex justify-center mt-8">
