@@ -73,8 +73,16 @@ export default function ProjectsSection() {
                 <div key={project.id} className="flex-none w-full md:w-1/2 lg:w-1/3 px-4">
                   <div className="project-card glass-effect rounded-2xl p-6 h-full">
                     {/* Project visual */}
-                    <div className={`h-48 rounded-xl mb-6 bg-gradient-to-br ${project.gradientFrom} ${project.gradientTo} flex items-center justify-center`}>
-                      <i className={`${project.icon.startsWith('fab') ? 'fab' : 'fas'} fa-${project.icon} text-6xl text-white opacity-50`}></i>
+                    <div className={`h-48 rounded-xl mb-6 bg-gradient-to-br ${project.gradientFrom} ${project.gradientTo} flex items-center justify-center overflow-hidden`}>
+                      {project.image ? (
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-full object-cover rounded-xl"
+                        />
+                      ) : (
+                        <i className={`${project.icon.startsWith('fab') ? 'fab' : 'fas'} fa-${project.icon} text-6xl text-white opacity-50`}></i>
+                      )}
                     </div>
                     <h3 className="text-xl font-bold text-[var(--portfolio-accent)] mb-3">{project.title}</h3>
                     <p className="text-gray-300 mb-4 text-sm">{project.description}</p>

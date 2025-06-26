@@ -1,0 +1,49 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bg7)"/>
+  
+  <!-- Medical Cross -->
+  <circle cx="80" cy="60" r="20" fill="#ef4444" opacity="0.8"/>
+  <rect x="75" y="50" width="10" height="20" fill="white"/>
+  <rect x="70" y="55" width="20" height="10" fill="white"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Treatment Outcome</text>
+  <text x="200" y="60" text-anchor="middle" fill="#fecaca" font-size="14">Logistic Regression Analysis</text>
+  
+  <!-- Model Background -->
+  <rect x="50" y="90" width="300" height="160" fill="rgba(255,255,255,0.1)" rx="10"/>
+  
+  <!-- ROC Curve -->
+  <path d="M70,240 Q120,200 150,180 Q200,140 250,120 Q300,100 330,90" 
+        fill="none" stroke="#10b981" stroke-width="3"/>
+  
+  <!-- Diagonal Reference Line -->
+  <line x1="70" y1="240" x2="330" y2="100" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- AUC Area -->
+  <polygon points="70,240 150,180 250,120 330,90 330,240" 
+           fill="rgba(16,185,129,0.2)"/>
+  
+  <!-- Performance Metrics -->
+  <rect x="260" y="160" width="70" height="60" fill="rgba(239,68,68,0.3)" rx="5"/>
+  <text x="295" y="175" text-anchor="middle" fill="white" font-size="10">AUC Score</text>
+  <text x="295" y="190" text-anchor="middle" fill="#10b981" font-size="14" font-weight="bold">0.87</text>
+  <text x="295" y="205" text-anchor="middle" fill="white" font-size="9">Accuracy</text>
+  <text x="295" y="215" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="bold">84%</text>
+  
+  <!-- Axis Labels -->
+  <text x="200" y="270" text-anchor="middle" fill="#fecaca" font-size="10">False Positive Rate</text>
+  <text x="30" y="170" fill="#fecaca" font-size="10" transform="rotate(-90 30 170)">True Positive Rate</text>
+  
+  <!-- Data Points -->
+  <circle cx="150" cy="180" r="3" fill="#10b981"/>
+  <circle cx="200" cy="140" r="3" fill="#10b981"/>
+  <circle cx="250" cy="120" r="3" fill="#10b981"/>
+</svg>

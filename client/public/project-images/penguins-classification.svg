@@ -1,0 +1,50 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bg6)"/>
+  
+  <!-- Penguin Silhouette -->
+  <ellipse cx="80" cy="45" rx="12" ry="15" fill="white"/>
+  <ellipse cx="80" cy="65" rx="8" ry="12" fill="white"/>
+  <circle cx="77" cy="42" r="2" fill="black"/>
+  <path d="M85,40 Q88,42 85,45" fill="#f97316"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Palmer Penguins</text>
+  <text x="200" y="60" text-anchor="middle" fill="#bae6fd" font-size="14">Interactive Shiny Classification</text>
+  
+  <!-- Classification Background -->
+  <rect x="50" y="90" width="300" height="160" fill="rgba(255,255,255,0.1)" rx="10"/>
+  
+  <!-- Species Clusters -->
+  <circle cx="120" cy="140" r="25" fill="rgba(14,165,233,0.3)" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="120" y="145" text-anchor="middle" fill="white" font-size="10">Adelie</text>
+  
+  <circle cx="200" cy="160" r="25" fill="rgba(34,197,94,0.3)" stroke="#22c55e" stroke-width="2"/>
+  <text x="200" y="165" text-anchor="middle" fill="white" font-size="10">Chinstrap</text>
+  
+  <circle cx="280" cy="140" r="25" fill="rgba(249,115,22,0.3)" stroke="#f97316" stroke-width="2"/>
+  <text x="280" y="145" text-anchor="middle" fill="white" font-size="10">Gentoo</text>
+  
+  <!-- Data Points -->
+  <circle cx="115" cy="135" r="3" fill="#0ea5e9"/>
+  <circle cx="125" cy="145" r="3" fill="#0ea5e9"/>
+  <circle cx="195" cy="155" r="3" fill="#22c55e"/>
+  <circle cx="205" cy="165" r="3" fill="#22c55e"/>
+  <circle cx="275" cy="135" r="3" fill="#f97316"/>
+  <circle cx="285" cy="145" r="3" fill="#f97316"/>
+  
+  <!-- Interactive Shiny Elements -->
+  <rect x="280" y="200" width="60" height="40" fill="rgba(14,165,233,0.3)" rx="5"/>
+  <text x="310" y="215" text-anchor="middle" fill="white" font-size="10">Shiny App</text>
+  <text x="310" y="230" text-anchor="middle" fill="#0ea5e9" font-size="12" font-weight="bold">R</text>
+  
+  <!-- Feature Labels -->
+  <text x="70" y="270" fill="#bae6fd" font-size="9">Bill Length →</text>
+  <text x="30" y="200" fill="#bae6fd" font-size="9" transform="rotate(-90 30 200)">Bill Depth ↑</text>
+</svg>

@@ -7,6 +7,7 @@ export interface Project {
   gradientFrom: string;
   gradientTo: string;
   year: string;
+  image?: string;
 }
 
 export const projectsData: Project[] = [
@@ -18,7 +19,8 @@ export const projectsData: Project[] = [
     icon: "chart-line",
     gradientFrom: "from-blue-600",
     gradientTo: "to-purple-600",
-    year: "2024"
+    year: "2024",
+    image: "/project-images/ai-revenue-assessment.svg"
   },
   {
     id: 2,
@@ -28,7 +30,8 @@ export const projectsData: Project[] = [
     icon: "microphone",
     gradientFrom: "from-purple-600",
     gradientTo: "to-pink-600",
-    year: "2024"
+    year: "2024",
+    image: "/project-images/audio-processing.svg"
   },
   {
     id: 3,
@@ -38,7 +41,8 @@ export const projectsData: Project[] = [
     icon: "bolt",
     gradientFrom: "from-green-600",
     gradientTo: "to-blue-600",
-    year: "2024"
+    year: "2024",
+    image: "/project-images/power-prediction.svg"
   },
   {
     id: 4,
@@ -48,7 +52,8 @@ export const projectsData: Project[] = [
     icon: "chart-bar",
     gradientFrom: "from-orange-600",
     gradientTo: "to-red-600",
-    year: "2024"
+    year: "2024",
+    image: "/project-images/sales-dashboard.svg"
   },
   {
     id: 5,
@@ -58,7 +63,8 @@ export const projectsData: Project[] = [
     icon: "bitcoin",
     gradientFrom: "from-yellow-600",
     gradientTo: "to-orange-600",
-    year: "2024"
+    year: "2024",
+    image: "/project-images/bitcoin-prediction.svg"
   },
   {
     id: 6,
@@ -68,7 +74,8 @@ export const projectsData: Project[] = [
     icon: "dove",
     gradientFrom: "from-blue-600",
     gradientTo: "to-cyan-600",
-    year: "2024"
+    year: "2024",
+    image: "/project-images/penguins-classification.svg"
   },
   {
     id: 7,
@@ -78,7 +85,8 @@ export const projectsData: Project[] = [
     icon: "heart-pulse",
     gradientFrom: "from-red-500",
     gradientTo: "to-pink-500",
-    year: "2023"
+    year: "2023",
+    image: "/project-images/treatment-outcome.svg"
   },
   {
     id: 8,
@@ -88,6 +96,7 @@ export const projectsData: Project[] = [
     icon: "phone",
     gradientFrom: "from-indigo-600",
     gradientTo: "to-purple-600",
-    year: "2023"
+    year: "2023",
+    image: "/project-images/telecom-churn.svg"
   }
 ];
