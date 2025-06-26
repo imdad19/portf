@@ -107,8 +107,8 @@ export default function ContactSection() {
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-center">
-                  <div className="w-12 h-12 bg-[var(--portfolio-accent)] bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                    <i className={`${info.icon} text-[var(--portfolio-accent)]`}></i>
+                  <div className="w-12 h-12 bg-[var(--portfolio-accent)] bg-opacity-20 rounded-full flex items-center justify-center mr-4 hover:bg-opacity-30 transition-all duration-300">
+                    <i className={`${info.icon} text-[var(--portfolio-accent)] text-lg`}></i>
                   </div>
                   <div>
                     <h4 className="font-semibold">{info.title}</h4>
