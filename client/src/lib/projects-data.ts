@@ -8,11 +8,29 @@ export interface Project {
   gradientTo: string;
   year: string;
   image?: string;
+  category: 'data-science' | 'web-dev';
+  url?: string;
 }
 
-export const projectsData: Project[] = [
+export const webDevProjects: Project[] = [
   {
     id: 1,
+    title: "Auralytics AI",
+    description: "Modern AI analytics platform featuring advanced data visualization, machine learning insights, and automated reporting. Built with React, Node.js, and integrated AI capabilities for business intelligence solutions. Developed by Imed Eddine Aouidane.",
+    technologies: ["React", "Node.js", "TypeScript", "AI/ML", "Analytics"],
+    icon: "brain",
+    gradientFrom: "from-purple-600",
+    gradientTo: "to-blue-600",
+    year: "2024",
+    category: "web-dev",
+    url: "https://auralyticsai.com",
+    image: "/project-images/auralytics-ai.svg"
+  }
+];
+
+export const dataScienceProjects: Project[] = [
+  {
+    id: 2,
     title: "AI Revenue Impact Assessment",
     description: "Comprehensive econometric analysis quantifying AI adoption impact on NVIDIA's financial performance using advanced statistical models and causal inference techniques.",
     technologies: ["R", "Time Series", "Econometrics", "ARIMA"],
@@ -20,10 +38,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-blue-600",
     gradientTo: "to-purple-600",
     year: "2024",
+    category: "data-science",
     image: "/project-images/ai-revenue-assessment.svg"
   },
   {
-    id: 2,
+    id: 3,
     title: "Intelligent Audio Processing",
     description: "End-to-end audio transcription and summarization pipeline using OpenAI Whisper with noise reduction algorithms and speaker diarization for multi-speaker environments.",
     technologies: ["Python", "OpenAI Whisper", "Audio ML", "NLP"],
@@ -31,10 +50,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-purple-600",
     gradientTo: "to-pink-600",
     year: "2024",
+    category: "data-science",
     image: "/project-images/audio-processing.svg"
   },
   {
-    id: 3,
+    id: 4,
     title: "Global Power Prediction",
     description: "Electricity consumption forecasting using ARIMA models and seasonal decomposition techniques for accurate time series predictions and energy planning.",
     technologies: ["R", "ARIMA", "Forecasting", "TSstudio"],
@@ -42,10 +62,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-green-600",
     gradientTo: "to-blue-600",
     year: "2024",
+    category: "data-science",
     image: "/project-images/power-prediction.svg"
   },
   {
-    id: 4,
+    id: 5,
     title: "Sales Analytics Dashboard",
     description: "Interactive Power BI dashboard visualizing sales trends, regional performance, and product profitability metrics with real-time data updates.",
     technologies: ["Power BI", "Data Viz", "Analytics", "SQL"],
@@ -53,10 +74,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-orange-600",
     gradientTo: "to-red-600",
     year: "2024",
+    category: "data-science",
     image: "/project-images/sales-dashboard.svg"
   },
   {
-    id: 5,
+    id: 6,
     title: "Bitcoin Price Prediction",
     description: "Cryptocurrency price forecasting using advanced time series analysis including ACF/PACF analysis and seasonal decomposition techniques.",
     technologies: ["R", "TSstudio", "Crypto", "Forecast"],
@@ -64,10 +86,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-yellow-600",
     gradientTo: "to-orange-600",
     year: "2024",
+    category: "data-science",
     image: "/project-images/bitcoin-prediction.svg"
   },
   {
-    id: 6,
+    id: 7,
     title: "Palmer Penguins Classification",
     description: "Interactive Shiny application for penguin species classification with real-time model testing, data visualization, and educational insights.",
     technologies: ["R", "Shiny", "Classification", "tidymodels"],
@@ -75,10 +98,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-blue-600",
     gradientTo: "to-cyan-600",
     year: "2024",
+    category: "data-science",
     image: "/project-images/penguins-classification.svg"
   },
   {
-    id: 7,
+    id: 8,
     title: "Treatment Outcome Assessment",
     description: "Logistic regression model to predict treatment success rates with statistical analysis and identification of key predictive factors.",
     technologies: ["R", "tidyverse", "glm", "caret"],
@@ -86,10 +110,11 @@ export const projectsData: Project[] = [
     gradientFrom: "from-red-500",
     gradientTo: "to-pink-500",
     year: "2023",
+    category: "data-science",
     image: "/project-images/treatment-outcome.svg"
   },
   {
-    id: 8,
+    id: 9,
     title: "Telecom Customer Churn",
     description: "Customer churn prediction using ensemble machine learning models including Random Forest and Logistic Regression with feature importance analysis.",
     technologies: ["R", "tidymodels", "Random Forest", "ggplot2"],
@@ -97,6 +122,9 @@ export const projectsData: Project[] = [
     gradientFrom: "from-indigo-600",
     gradientTo: "to-purple-600",
     year: "2023",
+    category: "data-science",
     image: "/project-images/telecom-churn.svg"
   }
 ];
+
+export const projectsData: Project[] = [...webDevProjects, ...dataScienceProjects];

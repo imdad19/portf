@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
-import { projectsData } from '@/lib/projects-data';
+import { webDevProjects, dataScienceProjects } from '@/lib/projects-data';
 
 export default function ProjectsSection() {
+  const [activeCategory, setActiveCategory] = useState<'web-dev' | 'data-science'>('web-dev');
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(1);
+  
+  const currentProjects = activeCategory === 'web-dev' ? webDevProjects : dataScienceProjects;
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,7 +24,7 @@ export default function ProjectsSection() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const maxSlide = Math.max(0, projectsData.length - slidesPerView);
+  const maxSlide = Math.max(0, currentProjects.length - slidesPerView);
 
   const nextSlide = () => {
     setCurrentSlide(prev => Math.min(prev + 1, maxSlide));
@@ -59,7 +62,39 @@ export default function ProjectsSection() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-4">Featured Projects</h2>
-          <p className="text-xl text-gray-300">Real-world applications of data science and machine learning</p>
+          <p className="text-xl text-gray-300">Web development and data science solutions</p>
+          
+          {/* Category Tabs */}
+          <div className="flex justify-center mt-8">
+            <div className="glass-effect rounded-full p-2 flex">
+              <button
+                onClick={() => {
+                  setActiveCategory('web-dev');
+                  setCurrentSlide(0);
+                }}
+                className={`px-6 py-3 rounded-full transition-all duration-300 ${
+                  activeCategory === 'web-dev'
+                    ? 'bg-[var(--portfolio-accent)] text-[var(--portfolio-primary)]'
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                Web Development
+              </button>
+              <button
+                onClick={() => {
+                  setActiveCategory('data-science');
+                  setCurrentSlide(0);
+                }}
+                className={`px-6 py-3 rounded-full transition-all duration-300 ${
+                  activeCategory === 'data-science'
+                    ? 'bg-[var(--portfolio-accent)] text-[var(--portfolio-primary)]'
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                Data Science
+              </button>
+            </div>
+          </div>
         </div>
         
         {/* Project Carousel */}
@@ -69,7 +104,7 @@ export default function ProjectsSection() {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(${translateX}%)` }}
             >
-              {projectsData.map((project) => (
+              {currentProjects.map((project) => (
                 <div key={project.id} className="flex-none w-full md:w-1/2 lg:w-1/3 px-4">
                   <div className="project-card glass-effect rounded-2xl p-6 h-full">
                     {/* Project visual */}
@@ -94,12 +129,17 @@ export default function ProjectsSection() {
                       ))}
                     </div>
                     <div className="flex justify-between items-center">
-                      <button className="text-[var(--portfolio-accent)] hover:text-white transition-colors">
-                        <i className="fas fa-external-link-alt mr-2"></i>View Details
-                      </button>
-                      <button className="text-gray-400 hover:text-white transition-colors">
-                        <i className="fab fa-github text-xl"></i>
-                      </button>
+                      <p className="text-gray-400 text-sm">{project.year}</p>
+                      {project.url && (
+                        <a 
+                          href={project.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-[var(--portfolio-accent)] hover:text-white transition-colors duration-300 text-sm"
+                        >
+                          View Live →
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

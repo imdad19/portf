@@ -1,30 +1,30 @@
 export default function AboutSection() {
   const achievements = [
     { icon: "fas fa-graduation-cap", text: "Data Science for Economics & Business" },
-    { icon: "fas fa-code", text: "Python & R Programming Expert" },
-    { icon: "fas fa-chart-line", text: "Machine Learning & Time Series Analysis" },
-    { icon: "fas fa-globe-europe", text: "Open to European Opportunities" }
+    { icon: "fas fa-laptop-code", text: "Freelance Web Developer" },
+    { icon: "fas fa-chart-line", text: "Machine Learning & Analytics" },
+    { icon: "fas fa-globe-europe", text: "Building Websites & Portfolios Globally" }
   ];
 
   const expertise = [
     {
+      icon: "fas fa-code",
+      title: "Web Development",
+      description: "React, Node.js, Modern Stacks"
+    },
+    {
       icon: "fas fa-robot",
       title: "Machine Learning",
-      description: "Supervised & Unsupervised"
+      description: "Data Science & Analytics"
     },
     {
-      icon: "fas fa-chart-area", 
-      title: "Time Series",
-      description: "Forecasting & Analysis"
+      icon: "fas fa-mobile-alt",
+      title: "Responsive Design",
+      description: "Mobile-First Approach"
     },
     {
-      icon: "fas fa-database",
-      title: "Data Pipeline", 
-      description: "ETL & Automation"
-    },
-    {
-      icon: "fas fa-eye",
-      title: "Visualization",
+      icon: "fas fa-chart-line",
+      title: "Data Visualization",
       description: "Interactive Dashboards"
     }
   ];
@@ -43,7 +43,7 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-4">About Me</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A driven data science professional with expertise in machine learning, statistical analysis, and automation
+            Freelance developer specializing in data science and web development. Creating modern websites, portfolios, and data-driven solutions for businesses worldwide.
           </p>
         </div>
         
