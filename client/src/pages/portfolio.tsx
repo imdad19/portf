@@ -5,7 +5,6 @@ import AboutSection from '@/components/about-section';
 import SkillsSection from '@/components/skills-section';
 import ProjectsSection from '@/components/projects-section';
 import ContactSection from '@/components/contact-section';
-import ChatbotWidget from '@/components/chatbot-widget';
 
 export default function Portfolio() {
   return (
@@ -17,7 +16,6 @@ export default function Portfolio() {
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />
-      <ChatbotWidget />
       
       {/* Footer */}
       <footer className="py-8 border-t border-gray-800">

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -7,7 +7,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import { apiRequest } from '@/lib/queryClient';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -19,7 +18,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function ContactSection() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const { toast } = useToast();
 
   const form = useForm<ContactFormData>({
@@ -32,30 +31,35 @@ export default function ContactSection() {
     }
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true);
-    try {
-      const response = await apiRequest('POST', '/api/contact', data);
-      const result = await response.json();
-      
-      if (result.success) {
-        toast({
-          title: 'Message Sent!',
-          description: result.message,
-        });
-        form.reset();
-      } else {
-        throw new Error(result.message);
-      }
-    } catch (error) {
-      toast({
-        title: 'Error',
-        description: error instanceof Error ? error.message : 'Failed to send message. Please try again.',
-        variant: 'destructive'
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+  const onSubmit = (data: ContactFormData) => {
+    // Create email content
+    const subject = `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`;
+    const body = `Hello Imed,
+
+I'm reaching out through your portfolio website.
+
+Name: ${data.name}
+Email: ${data.email}
+${data.company ? `Company: ${data.company}\n` : ''}
+Message:
+${data.message}
+
+Best regards,
+${data.name}`;
+
+    // Create mailto link
+    const mailtoLink = `mailto:aouidaneimad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Show success message and reset form
+    toast({
+      title: 'Email Client Opened!',
+      description: 'Your default email client should open with the message pre-filled.',
+    });
+    
+    form.reset();
   };
 
   const contactInfo = [
@@ -232,10 +236,9 @@ export default function ContactSection() {
                 
                 <Button 
                   type="submit" 
-                  disabled={isSubmitting}
                   className="w-full bg-gradient-to-r from-[var(--portfolio-accent)] to-[var(--portfolio-coral)] hover:opacity-90 transition-opacity"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  Send Message
                 </Button>
               </form>
             </Form>

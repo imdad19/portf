@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, full-stack portfolio website for Imed Eddine Aouidane, a data science professional. The application showcases his skills, projects, and professional background through an interactive web interface with a chatbot assistant and contact form functionality.
+This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a data science professional. The application showcases his skills, projects, and professional background through a clean, interactive web interface with a simplified contact form and optimized for static hosting.
 
 ## System Architecture
 
@@ -14,19 +14,11 @@ This is a modern, full-stack portfolio website for Imed Eddine Aouidane, a data 
 - **Build Tool**: Vite for development and production builds
 - **UI Components**: Radix UI primitives with custom styling
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js server
-- **Language**: TypeScript
-- **Database ORM**: Drizzle ORM with PostgreSQL
-- **Session Management**: Connect-pg-simple for PostgreSQL session storage
-- **Development**: Hot module replacement with Vite middleware integration
-
-### Database Design
-- **Database**: PostgreSQL (Neon serverless)
-- **Tables**:
-  - `users`: User authentication (id, username, password)
-  - `contacts`: Contact form submissions (id, name, email, company, message, createdAt)
-  - `chat_messages`: Chatbot conversations (id, sessionId, message, response, createdAt)
+### Static Site Architecture
+- **Build Tool**: Vite for optimized production builds
+- **Deployment**: Static site compatible with any hosting platform
+- **Contact Form**: Direct mailto integration for seamless communication
+- **Performance**: Optimized for fast loading and excellent SEO
 
 ## Key Components
 
@@ -38,10 +30,10 @@ This is a modern, full-stack portfolio website for Imed Eddine Aouidane, a data 
 5. **Contact Section**: Form for professional inquiries
 
 ### Interactive Features
-- **Chatbot Widget**: AI-powered assistant using OpenAI GPT-4o for visitor engagement
-- **Contact Form**: Validated form with server-side processing and email notifications
+- **Contact Form**: Validated form with direct email integration using mailto protocol
 - **Particle Background**: Animated particle effects for visual appeal
 - **Responsive Navigation**: Mobile-friendly navigation with smooth scrolling
+- **Project Showcase**: Custom SVG visualizations for all data science projects
 
 ### UI Components
 - **Design System**: Custom dark theme with glassmorphism effects
@@ -51,21 +43,12 @@ This is a modern, full-stack portfolio website for Imed Eddine Aouidane, a data 
 
 ## Data Flow
 
-### Contact Form Submission
+### Contact Form Flow
 1. User fills out contact form with validation
-2. Form data validated using Zod schemas
-3. Data sent to `/api/contact` endpoint
-4. Server validates and stores in PostgreSQL
-5. Success/error response returned to client
-6. Toast notification displayed to user
-
-### Chatbot Interaction
-1. User sends message through chat widget
-2. Message sent to `/api/chat` with session ID
-3. Server processes message with OpenAI API
-4. Response generated based on Imed's professional context
-5. Conversation stored in database for session tracking
-6. Real-time response displayed in chat interface
+2. Form data validated using Zod schemas client-side
+3. Mailto link generated with pre-filled email content
+4. User's default email client opens with message ready to send
+5. Toast notification confirms email client activation
 
 ### Skills Data Management
 - Static data structure for technical skills and expertise
@@ -97,24 +80,28 @@ This is a modern, full-stack portfolio website for Imed Eddine Aouidane, a data 
 
 ### Build Process
 1. **Development**: `npm run dev` - Vite dev server with HMR
-2. **Production Build**: 
-   - Frontend: Vite builds React app to `dist/public`
-   - Backend: esbuild bundles server to `dist/index.js`
-3. **Database**: Drizzle migrations with `npm run db:push`
+2. **Production Build**: `npm run build` - Vite builds optimized static site to `dist/`
+3. **Preview**: `npm run preview` - Preview production build locally
 
-### Environment Configuration
-- **Development**: PostgreSQL module in Replit environment
-- **Production**: Neon serverless PostgreSQL via DATABASE_URL
-- **API Keys**: OpenAI API key for chatbot functionality
+### Hosting Options
+- **Netlify**: Drag-and-drop deployment from `dist/` folder
+- **Vercel**: Connect GitHub repository for automatic deployments
+- **GitHub Pages**: Direct deployment from repository
+- **Any Static Host**: Upload `dist/` contents to any web server
 
-### Hosting
-- **Platform**: Replit with autoscale deployment
-- **Port Configuration**: Internal port 5000, external port 80
-- **Static Assets**: Served from `dist/public` directory
-- **Server**: Express.js serving API routes and SPA fallback
+### Contact Information
+- **Email**: aouidaneimad@gmail.com (clickable mailto links)
+- **LinkedIn**: www.linkedin.com/in/imed-eddine-aouidane-152b17201
+- **GitHub**: https://github.com/imdad19
 
 ## Changelog
-- June 25, 2025. Initial setup
+- June 26, 2025: Simplified to frontend-only architecture
+  - Removed AI chatbot (unnecessary for portfolio)
+  - Converted contact form to mailto integration
+  - Added custom SVG project visualizations
+  - Enhanced contact section with clickable social links
+  - Optimized for static hosting platforms
+- June 25, 2025: Initial full-stack setup
 
 ## User Preferences
 
