@@ -95,12 +95,14 @@ The portfolio is fully configured for Netlify with automatic GitHub integration:
 
 ### Current Status
 - ✅ Ready for immediate Netlify deployment
-- ✅ Build process generates proper HTML/JS/CSS files in dist/public
+- ✅ Fixed all 404 deployment issues (client-only build)
+- ✅ Build process generates proper HTML/JS/CSS files in client/dist
 - ✅ Multi-language translation system active
 - ✅ Responsive design optimized
 - ✅ All projects and features functional
 - ✅ Dr. Oussama Aouidane's pharmacist portfolio added
-- ✅ Proper Netlify configuration with redirects
+- ✅ Proper Netlify configuration with SPA redirects
+- ✅ Separate client package.json with all dependencies
 
 ### Contact Information
 - **Email**: aouidaneimad@gmail.com (clickable mailto links)
