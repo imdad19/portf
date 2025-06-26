@@ -95,6 +95,12 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
 - **GitHub**: https://github.com/imdad19
 
 ## Changelog
+- June 26, 2025: Added animations and prepared for Netlify deployment
+  - Created comprehensive loading animation with progress indicators and floating particles
+  - Added smooth entrance animations to all sections (fade-in, slide-in, scale-in)
+  - Configured Netlify deployment with netlify.toml and redirect rules
+  - Created detailed README with deployment instructions
+  - Optimized build process for static hosting platforms
 - June 26, 2025: Refined focus and updated project details
   - Updated description to emphasize data science specialization in machine learning and statistical analysis
   - Changed all web development project dates to 2025
