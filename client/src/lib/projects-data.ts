@@ -21,7 +21,7 @@ export const webDevProjects: Project[] = [
     icon: "brain",
     gradientFrom: "from-purple-600",
     gradientTo: "to-blue-600",
-    year: "2024",
+    year: "2025",
     category: "web-dev",
     url: "https://auralyticsai.com",
     image: "/attached_assets/Auralytics Ai-28_1750960301699.png"
@@ -34,7 +34,7 @@ export const webDevProjects: Project[] = [
     icon: "lightning-bolt",
     gradientFrom: "from-blue-600",
     gradientTo: "to-cyan-600",
-    year: "2024",
+    year: "2025",
     category: "web-dev",
     url: "https://nexaiwmf.netlify.app/",
     image: "/project-images/nexai-wmf-new.svg"

@@ -29,16 +29,10 @@ export default function HeroSection() {
             </h1>
             <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6">Data Scientist & Web Developer</h2>
             <p className="text-lg text-gray-300 mb-8 max-w-lg">
-              Full-stack developer and data scientist specializing in web development, machine learning, and data visualization. 
-              Creating modern websites, portfolios, and intelligent data-driven solutions.
+              Data scientist specializing in machine learning, statistical analysis, and data visualization. 
+              Creating intelligent data-driven solutions and modern web applications.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button 
-                onClick={handleDownloadCV}
-                className="glass-effect px-8 py-3 rounded-full hover:bg-[var(--portfolio-accent)] hover:text-[var(--portfolio-primary)] transition-all duration-300 transform hover:scale-105"
-              >
-                <i className="fas fa-download mr-2"></i>Download CV
-              </button>
+            <div className="flex justify-center lg:justify-start">
               <div className="glass-effect px-6 py-3 rounded-full border border-[var(--portfolio-coral)] border-opacity-30">
                 <div className="flex items-center">
                   <i className="fas fa-globe-europe text-[var(--portfolio-coral)] mr-2"></i>

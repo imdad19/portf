@@ -95,6 +95,11 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
 - **GitHub**: https://github.com/imdad19
 
 ## Changelog
+- June 26, 2025: Refined focus and updated project details
+  - Updated description to emphasize data science specialization in machine learning and statistical analysis
+  - Changed all web development project dates to 2025
+  - Removed download CV button for cleaner hero section
+  - Maintained "Data Scientist & Web Developer" title with data science emphasis
 - June 26, 2025: Updated title and enhanced project visualizations
   - Changed title to "Data Scientist & Web Developer" 
   - Updated hero and about sections to reflect dual expertise
