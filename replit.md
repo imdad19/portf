@@ -103,9 +103,10 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
   - Language preference saved to localStorage for persistence
 - June 26, 2025: Enhanced hero section and added pharmacist portfolio project
   - Increased profile photo size from 320px to 384px (480px on large screens)
-  - Added new web development project: Pharmacist Portfolio for Dr. Sarah Johnson, PharmD
+  - Added new web development project: Pharmacist Portfolio for Dr. Oussama Aouidane, PharmD
   - Created custom SVG visualization featuring clinical research, drug safety, and regulatory affairs
   - Updated project data with pharmaceutical industry focus and professional healthcare design
+  - Portfolio links to aouidaneoussama.netlify.app
 - June 26, 2025: Removed animations and improved hero layout
   - Removed loading animation and entrance animations per user request
   - Reduced gap between hero text and image from 12 to 6 (closer spacing)

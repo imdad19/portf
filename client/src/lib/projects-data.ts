@@ -42,14 +42,14 @@ export const webDevProjects: Project[] = [
   {
     id: 11,
     title: "Pharmacist Portfolio",
-    description: "Professional portfolio website for Dr. Sarah Johnson, PharmD, showcasing clinical research, drug safety expertise, and regulatory affairs experience in the pharmaceutical industry.",
+    description: "Professional portfolio website for Dr. Oussama Aouidane, PharmD, showcasing clinical research, drug safety expertise, and regulatory affairs experience in the pharmaceutical industry.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Radix UI"],
     icon: "pill",
     gradientFrom: "from-green-600",
     gradientTo: "to-emerald-600",
     year: "2025",
     category: "web-dev",
-    url: "https://dr-sarah-johnson-pharmd.com",
+    url: "https://aouidaneoussama.netlify.app",
     image: "/project-images/pharmacist-portfolio.svg"
   },
   {
