@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
+import { Mail, Linkedin, Github, MapPin, Globe } from 'lucide-react';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -31,10 +32,37 @@ export default function ContactSection() {
     }
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    // Create email content
-    const subject = `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`;
-    const body = `Hello Imed,
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      // Use Formspree to send email directly to your inbox
+      const response = await fetch('https://formspree.io/f/aouidaneimad@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          company: data.company || '',
+          message: data.message,
+          _replyto: data.email,
+          _subject: `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: 'Message Sent Successfully!',
+          description: 'Thank you for your message. I will get back to you soon.',
+        });
+        form.reset();
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      // Fallback to mailto if Formspree fails
+      const subject = `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`;
+      const body = `Hello Imed,
 
 I'm reaching out through your portfolio website.
 
@@ -47,42 +75,37 @@ ${data.message}
 Best regards,
 ${data.name}`;
 
-    // Create mailto link
-    const mailtoLink = `mailto:aouidaneimad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show success message and reset form
-    toast({
-      title: 'Email Client Opened!',
-      description: 'Your default email client should open with the message pre-filled.',
-    });
-    
-    form.reset();
+      const mailtoLink = `mailto:aouidaneimad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+      
+      toast({
+        title: 'Email Client Opened',
+        description: 'Please send the message from your email client.',
+      });
+    }
   };
 
   const contactInfo = [
     {
-      icon: "fas fa-envelope",
+      icon: Mail,
       title: "Email",
       value: "aouidaneimad@gmail.com",
       link: "mailto:aouidaneimad@gmail.com"
     },
     {
-      icon: "fab fa-linkedin", 
+      icon: Linkedin,
       title: "LinkedIn",
       value: "linkedin.com/in/imed-eddine-aouidane-152b17201",
       link: "https://www.linkedin.com/in/imed-eddine-aouidane-152b17201"
     },
     {
-      icon: "fab fa-github",
+      icon: Github,
       title: "GitHub", 
       value: "github.com/imdad19",
       link: "https://github.com/imdad19"
     },
     {
-      icon: "fas fa-map-marker-alt",
+      icon: MapPin,
       title: "Location",
       value: "Algeria (Open to European relocation)"
     }
@@ -112,7 +135,7 @@ ${data.name}`;
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-center">
                   <div className="w-12 h-12 bg-[var(--portfolio-accent)] bg-opacity-20 rounded-full flex items-center justify-center mr-4 hover:bg-opacity-30 transition-all duration-300">
-                    <i className={`${info.icon} text-[var(--portfolio-accent)] text-lg`}></i>
+                    <info.icon className="w-5 h-5 text-[var(--portfolio-accent)]" />
                   </div>
                   <div>
                     <h4 className="font-semibold">{info.title}</h4>
@@ -137,7 +160,7 @@ ${data.name}`;
             <div className="mt-8 p-6 glass-effect rounded-xl border border-[var(--portfolio-accent)] border-opacity-30">
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-[var(--portfolio-accent)] to-[var(--portfolio-coral)] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-globe-europe text-white text-2xl"></i>
+                  <Globe className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-lg font-bold text-[var(--portfolio-accent)] mb-2">Global Mobility</h4>
                 <p className="text-gray-300 text-sm mb-3">Open to international opportunities worldwide</p>
