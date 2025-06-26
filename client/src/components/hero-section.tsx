@@ -27,10 +27,10 @@ export default function HeroSection() {
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
               Hello, I'm <span className="gradient-text">Imed Eddine Aouidane</span>
             </h1>
-            <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6">Data Scientist</h2>
+            <h2 className="text-2xl lg:text-3xl text-[var(--portfolio-accent)] mb-6">Data Scientist & Web Developer</h2>
             <p className="text-lg text-gray-300 mb-8 max-w-lg">
-              Data science professional specializing in machine learning, time series analysis, and data visualization. 
-              Passionate about transforming data into actionable insights and building intelligent solutions.
+              Full-stack developer and data scientist specializing in web development, machine learning, and data visualization. 
+              Creating modern websites, portfolios, and intelligent data-driven solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button 

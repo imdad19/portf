@@ -95,6 +95,12 @@ This is a modern, frontend-only portfolio website for Imed Eddine Aouidane, a da
 - **GitHub**: https://github.com/imdad19
 
 ## Changelog
+- June 26, 2025: Updated title and enhanced project visualizations
+  - Changed title to "Data Scientist & Web Developer" 
+  - Updated hero and about sections to reflect dual expertise
+  - Fixed Auralytics AI image display with white background and proper sizing
+  - Created improved SVG visualizations for Nexai WMF and Portfolio projects
+  - Enhanced project image handling for better visual presentation
 - June 26, 2025: Added web development projects and updated images
   - Updated Auralytics AI to use provided brand image
   - Added Nexai WMF project (https://nexaiwmf.netlify.app/)

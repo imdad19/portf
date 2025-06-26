@@ -37,7 +37,7 @@ export const webDevProjects: Project[] = [
     year: "2024",
     category: "web-dev",
     url: "https://nexaiwmf.netlify.app/",
-    image: "/project-images/nexai-wmf.svg"
+    image: "/project-images/nexai-wmf-new.svg"
   },
   {
     id: 11,
@@ -49,7 +49,7 @@ export const webDevProjects: Project[] = [
     gradientTo: "to-teal-600",
     year: "2025",
     category: "web-dev",
-    image: "/project-images/portfolio.svg"
+    image: "/project-images/portfolio-new.svg"
   }
 ];
 

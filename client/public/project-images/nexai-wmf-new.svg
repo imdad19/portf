@@ -1,0 +1,76 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nexaiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#0a0f1c"/>
+  
+  <!-- Glow Effect -->
+  <circle cx="200" cy="150" r="120" fill="url(#glowGradient)" opacity="0.3"/>
+  
+  <!-- Dashboard Frame -->
+  <rect x="50" y="50" width="300" height="200" rx="15" fill="#1e293b" stroke="url(#nexaiGradient)" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Top Navigation Bar -->
+  <rect x="60" y="60" width="280" height="25" rx="5" fill="url(#nexaiGradient)" opacity="0.3"/>
+  <circle cx="75" cy="72" r="3" fill="#ef4444"/>
+  <circle cx="90" cy="72" r="3" fill="#f59e0b"/>
+  <circle cx="105" cy="72" r="3" fill="#10b981"/>
+  
+  <!-- AI Logo/Symbol -->
+  <circle cx="200" cy="130" r="25" fill="url(#nexaiGradient)" opacity="0.8"/>
+  <path d="M 185 125 L 195 115 L 205 125 L 215 115 M 185 135 L 195 145 L 205 135 L 215 145" 
+        stroke="#ffffff" stroke-width="2" fill="none" opacity="0.9"/>
+  
+  <!-- Lightning Bolt -->
+  <path d="M 190 105 L 185 115 L 195 115 L 188 125" 
+        fill="url(#lightningGradient)" opacity="0.9"/>
+  <path d="M 210 125 L 215 115 L 205 115 L 212 105" 
+        fill="url(#lightningGradient)" opacity="0.9"/>
+  
+  <!-- Dashboard Widgets -->
+  <rect x="70" y="95" width="60" height="30" rx="5" fill="url(#nexaiGradient)" opacity="0.2" stroke="url(#nexaiGradient)" stroke-width="1"/>
+  <rect x="270" y="95" width="60" height="30" rx="5" fill="url(#nexaiGradient)" opacity="0.2" stroke="url(#nexaiGradient)" stroke-width="1"/>
+  
+  <!-- Data Flow Lines -->
+  <path d="M 130 115 Q 150 100 170 115" stroke="url(#nexaiGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 230 115 Q 250 100 270 115" stroke="url(#nexaiGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Workflow Nodes -->
+  <circle cx="100" cy="110" r="6" fill="url(#lightningGradient)" opacity="0.8"/>
+  <circle cx="300" cy="110" r="6" fill="url(#lightningGradient)" opacity="0.8"/>
+  
+  <!-- Bottom Status Bar -->
+  <rect x="70" y="170" width="260" height="40" rx="8" fill="#374151" opacity="0.6"/>
+  
+  <!-- Status Indicators -->
+  <rect x="80" y="180" width="40" height="6" rx="3" fill="#10b981" opacity="0.8"/>
+  <rect x="130" y="180" width="30" height="6" rx="3" fill="#f59e0b" opacity="0.8"/>
+  <rect x="170" y="180" width="50" height="6" rx="3" fill="#06b6d4" opacity="0.8"/>
+  
+  <!-- Network Connection Lines -->
+  <line x1="80" y1="200" x2="120" y2="195" stroke="url(#nexaiGradient)" stroke-width="1" opacity="0.5"/>
+  <line x1="280" y1="200" x2="320" y2="195" stroke="url(#nexaiGradient)" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="190" x2="200" y2="210" stroke="url(#nexaiGradient)" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Floating Particles -->
+  <circle cx="60" cy="80" r="2" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="340" cy="90" r="2" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="70" cy="220" r="2" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="330" cy="230" r="2" fill="#06b6d4" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold" opacity="0.9">Nexai WMF</text>
+</svg>
