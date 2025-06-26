@@ -32,37 +32,10 @@ export default function ContactSection() {
     }
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    try {
-      // Use Formspree to send email directly to your inbox
-      const response = await fetch('https://formspree.io/f/aouidaneimad@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          company: data.company || '',
-          message: data.message,
-          _replyto: data.email,
-          _subject: `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`
-        }),
-      });
-
-      if (response.ok) {
-        toast({
-          title: 'Message Sent Successfully!',
-          description: 'Thank you for your message. I will get back to you soon.',
-        });
-        form.reset();
-      } else {
-        throw new Error('Failed to send message');
-      }
-    } catch (error) {
-      // Fallback to mailto if Formspree fails
-      const subject = `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`;
-      const body = `Hello Imed,
+  const onSubmit = (data: ContactFormData) => {
+    // Pure frontend - open email client with pre-filled message
+    const subject = `Portfolio Contact: ${data.name}${data.company ? ` from ${data.company}` : ''}`;
+    const body = `Hello Imed,
 
 I'm reaching out through your portfolio website.
 
@@ -75,14 +48,15 @@ ${data.message}
 Best regards,
 ${data.name}`;
 
-      const mailtoLink = `mailto:aouidaneimad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoLink;
-      
-      toast({
-        title: 'Email Client Opened',
-        description: 'Please send the message from your email client.',
-      });
-    }
+    const mailtoLink = `mailto:aouidaneimad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+    
+    toast({
+      title: 'Email Client Opened',
+      description: 'Please send the message from your email client.',
+    });
+    
+    form.reset();
   };
 
   const contactInfo = [
