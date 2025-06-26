@@ -45,7 +45,7 @@ export default function HeroSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Professional photo with creative framing */}
-              <div className="w-80 h-80 rounded-full glass-effect p-2 animate-float">
+              <div className="w-96 h-96 lg:w-[28rem] lg:h-[28rem] rounded-full glass-effect p-2 animate-float">
                 <img 
                   src={profileImage}
                   alt="Imed Eddine Aouidane - Data Scientist" 
